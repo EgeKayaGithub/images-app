@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="absolute-masonry.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <section class="search-container">
+        <div class="search">
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <input class="search-input" type="text" placeholder="Write anything" />
+        </div>
+        <div class="search-buttons">
+          <button class="search-button btn">Search</button>
+          <button class="clean-button btn">Clean</button>
+        </div>
+      </section>
+      <section class="images-section">
+        <div class="loadingAnimation">
+          <div class="loader"></div>
+        </div>
+        <div class="grid"></div>
+      </section>
+      <footer class="footer-section">
+        <p>&copy;This site was created by Ege Kaya</p>
+        <a href="https://github.com/EgeKayaGithub" target="_blank"
+          ><img
+            class="github-image"
+            src="https://go-skill-icons.vercel.app/api/icons?i=github"
+            alt="github"
+        /></a>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
